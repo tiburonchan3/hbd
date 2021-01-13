@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+body {
+	font-family: 'Indie Flower', cursive !important;
+  	background:url('https://www.hdnicewallpapers.com/Walls/Big/Love%20Heart/Beautiful_Pink_Heart_Background.jpg'); /*CAPE HONEY*/
+	margin: 0px;
+	padding: 0px;
+	height: 100vh;
+	overflow: hidden;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.mask{
+	width: 100%;
+	height: 100%;
+	background:rgba(0, 0, 0, .4);
+	position:fixed;
+	overflow: hidden;
+}
+::selection {
+	background: transparent;
+}
+
+h4 {
+	font-size: 26px;
+	line-height: 1px;
+	font-family: 'Amatic SC', cursive !important;
+}
+
+.color1{color:#1BBC9B}/*MOUNTAIN MEADOW*/
+.color2{color:#C0392B/*TALL POPPY*/}
+
+
+.card {
+	color: #013243; /*SHERPA BLUE*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 500px;
+	height: 600px;
+	background: #e0e1dc;
+	transform-style: preserve-3d;
+	transform: translate(-50%,-50%) perspective(2000px);
+	box-shadow: inset 300px 0 50px rgba(0,0,0,.5), 20px 0 60px rgba(0,0,0,.5);
+	transition: 1s;
+}
+
+.card:hover {
+	transform: translate(-50%,-50%) perspective(2000px) rotate(15deg) scale(1.2);
+	box-shadow: inset 20px 0 50px rgba(0,0,0,.5), 0 10px 100px rgba(0,0,0,.5);
+}
+
+.card:before {
+	content:'';
+	position: absolute;
+	top: -3px;
+	left: 0;
+	width: 100%;
+	height: 5px;
+	background: #BAC1BA;
+	transform-origin: bottom;
+	transform: skewX(-45deg);
+}
+
+.card:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: -5px;
+	width: 5px;
+	height: 100%;
+	background: #92A29C;
+	transform-origin: left;
+	transform: skewY(-45deg);
+}
+
+.card .imgBox {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	transform-origin: left;
+	transition: .7s;
+}
+
+.card .bark {
+	position: absolute;
+	background: #e0e1dc;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: .7s;
+}
+
+.card .imgBox img {
+	min-width: 250px;
+	max-height: 400px;
+}
+
+.card:hover .imgBox {
+	transform: rotateY(-135deg);
+}
+
+.card:hover .bark {
+	opacity: 1;
+	transition: .6s;
+  box-shadow: 300px 200px 100px rgba(0, 0, 0, .4) inset;
+}
+
+.card .details {
+	position: absolute;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+	padding: 0 0 0 10px;
+	z-index: -1;
+	margin-top: 70px;
+}
+
+.card .details .text-left-box p {
+	font-size: 20px;
+	line-height: 5px;
+	transform: rotate(3deg);
+	padding: 0 0 0 20px;
+}
+.text-left-box{
+	margin-left:20px;
+	margin-top:50px
+}
+.card .details h4 {
+	text-align: center;
+}
+.text-right{
+	text-align: right;
+}
+.text-right-box {
+	margin-right: 50px;
+	margin-top: 120px;
+}
+.img-bg{
+	background-image: url('https://assets.entrepreneur.com/content/3x2/1300/20150923181055-happy-birthday-celebrate-cupcake.jpeg');
+	width: 100%;
+	height: 100%;
+	background-size:cover;
+	background-position: right;
+}
